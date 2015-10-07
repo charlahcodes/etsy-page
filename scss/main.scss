@@ -1,0 +1,63 @@
+.header {
+
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.logo {
+  color: #F56400;
+}
+
+.categories {
+
+}
+
+.topMenu ul {
+  list-style: none;
+}
+
+.topMenu ul li {
+  display: inline-block;
+}
+
+.mainBody {
+  background-color: #F5F5F1;
+}
+
+.categories {
+  width: 20%;
+  float: left;
+  border: 1px solid #E1E3DF;
+  border-radius: 2px;
+  float: left;
+}
+
+.categories ul li {
+  display: block;
+}
+
+.resultsContainer {
+  float: right;
+  width: 77%; 
+
+}
+
+.productImages {
+  width: 224.984px;
+  overflow: hidden;
+
+}
+
+.productImages img {
+  max-width: 100%;
+}
+
+.searchResults {
+
+}
