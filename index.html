@@ -5,15 +5,22 @@
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body
+<body>
   <div class="header">
-    <ul>
+    <ul class="topLeftText">
       <li class="logo">Etsy</li>
-      <li>Search</li>
-      <li>Sell on Etsy</li>
-      <li>Register</li>
-      <li>Sign in</li>
-      <li>Cart</li>
+      <li>
+        <div class="search">
+          <input type="search">
+          <div class="searchButton">Search</div>
+        </div>
+      </li>
+    </ul>
+    <ul class="topRightText">
+      <li><div><a href="#">Sell on Etsy</a></div></li>
+      <li><div><a href="#">Register</a></div></li>
+      <li><div class="signIn">Sign in</div></li>
+      <li><div class="cart"><!-- <img src="images/cart.png"> -->Cart</div></li>
     </ul>
   </div>
   <div class="topMenu">
@@ -29,50 +36,78 @@
     </ul>
   </div>
   <div class="mainBody">
-    <div class="categories">
-      <p>All categories</p>
-      <ul>
-        <li>Home & Living</li>
-        <li>Art & Collectibles</li>
-        <li>Weddings</li>
-        <li>Clothing</li>
-        <li>Jewelry</li>
-        <li>Paper & Party Supplies</li>
-        <li>Accessories</li>
-        <li>Craft Supplies & Tools</li>
-        <li>Bags & Purses</li>
-        <li>Bath & Beauty</li>
-        <li>Shoes</li>
-        <li>Books, Movies & Music</li>
-        <li>Electronics & Accessories</li>
-        <li>Toys & Games</li>
-        <li>Pet Supplies</li>
-      </ul>
+
+    <div class="leftSideBody">
+      <div class="showResults">Show results for:</div>
+      <div class="categories">
+        <p>All categories</p>
+        <ul>
+          <li><a href="#">Home & Living</a></li>
+          <li><a href="#">Art & Collectibles</a></li>
+          <li><a href="#">Weddings</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Paper & Party Supplies</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Craft Supplies & Tools</a></li>
+          <li><a href="#">Bags & Purses</a></li>
+          <li><a href="#">Bath & Beauty</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Books, Movies & Music</a></li>
+          <li><a href="#">Electronics & Accessories</a></li>
+          <li><a href="#">Toys & Games</a></li>
+          <li><a href="#">Pet Supplies</a></li>
+        </ul>
+      </div>
+      <div class="refine">Refine</div>
+      <div class="refineOptions">
+        <p>Item Type</p>
+        <ul>
+          <li><input type="radio" name="myRadio"><a href="#">All Items</a></li>
+          <li><input type="radio" name="myRadio"><a href="#">Handmade</a></li>
+          <li><input type="radio" name="myRadio"><a href="#">Vintage</a></li>
+        </ul>
+        <div class="line"></div>
+        <p>Price</p>
+        <div class="priceInputs">
+          <input class="lowPrice"> to <input class="highPrice"><span class="arrowBox"></span>
+        </div>
+        <div class="line"></div>
+        <p>Filter by Color</p>
+        <div class="colors">
+          <div class="red"></div>
+          <div class="orange"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+          <div class="blue"></div>
+          <div class="purple"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rightSideBody">
+      <div class="categoriesInResults">All Categories > "whiskey" (25,479 Results)</div>
+      <div class="sortBy">Sort by:  Relevancy</div>
+      <div class="resultsContainer">
+      </div>
+    </div>
   </div>
-
-  <div class="resultsContainer">
-
-  </div>
-
  
   <script type="text/template" id="itemTemplate">
-    <div class = "searchResults">
-      <p>
-        <%= title %>
-      </p>
-
-      <p>
-        <%= Shop.shop_name %>
-      </p>
-
-      <p class="price">
-        $<%= price %>
-      </p>
+    <div class="resultsCard">
+      <div class="productImages">
+        <img src="<%= Images[0].url_570xN %>">
+      </div>
+      <div class = "cardText">
+        <ul>
+          <li><%= title %></li>
+          <li><%= Shop.shop_name %></li>
+          <li>$<%= price %></li>
+        </ul>
+      </div>
     </div>
-  </script>
-
-  <script type="text/template" id="imageTemplate">
-      <div class="productImages"><img src="<%= Images[0].url_570xN %>"></div>
   </script>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>

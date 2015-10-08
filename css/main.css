@@ -1,44 +1,197 @@
-.header ul {
-  list-style: none; }
+a {
+  color: #13A0C0;
+  text-decoration: none; }
 
-.header ul li {
-  display: inline-block; }
+a:hover {
+  text-decoration: underline; }
 
-.logo {
-  color: #F56400; }
+.topLeftText {
+  list-style: none;
+  margin: 20px 150px;
+  padding: 0;
+  float: left; }
+  .topLeftText li {
+    display: inline-block; }
+  .topLeftText .logo {
+    color: #F56400;
+    font: 40px serif; }
+  .topLeftText .search {
+    border: 1px solid #C9CACA;
+    border-radius: 3px;
+    width: 305px;
+    overflow: hidden;
+    margin-left: 15px; }
+  .topLeftText input {
+    outline: none;
+    border: none; }
+  .topLeftText .searchButton {
+    color: white;
+    background-color: #2BA8C6;
+    float: right;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold; }
+  .topLeftText .searchButton:hover {
+    background-color: #32b3d3;
+    cursor: pointer; }
 
-.topMenu ul {
-  list-style: none; }
+.topRightText {
+  list-style: none;
+  margin: 30px 150px;
+  padding: 0;
+  float: right;
+  color: #2BA8C6;
+  font-size: 15px; }
+  .topRightText li {
+    display: inline-block;
+    padding-left: 5px; }
+  .topRightText .signIn {
+    border: 1px solid #0092B7;
+    border-radius: 3px;
+    padding: 7px; }
+  .topRightText .signIn:hover {
+    cursor: pointer;
+    background-color: #f3fbfd; }
+  .topRightText .cart:before {
+    border: 1px solid black; }
+  .topRightText .cart {
+    color: #888888; }
 
-.topMenu ul li {
-  display: inline-block; }
+.topMenu {
+  clear: both;
+  border-top: 1px solid #E1E3DF;
+  border-bottom: 1px solid #E1E3DF;
+  box-shadow: 0 0.1px #CBCCC9;
+  color: #696969;
+  font-size: 14px;
+  text-align: center; }
+  .topMenu ul {
+    list-style: none; }
+  .topMenu li {
+    display: inline-block;
+    padding: 0 10px; }
 
 .mainBody {
-  background-color: #F5F5F1; }
-
-.categories {
-  width: 20%;
-  float: left;
-  border: 1px solid #E1E3DF;
-  border-radius: 2px;
-  float: left; }
-
-.categories ul li {
-  display: block; }
-
-.resultsContainer {
-  float: right;
-  width: 77%; }
-
-.productImages {
-  width: 224.984px;
-  height: 178.656px;
-  overflow: hidden; }
-
-.productImages img {
-  max-width: 100%; }
-
-  .searchResults {
-    width: 212.984px;
-    height: 35px;
-  }
+  background-color: #F5F5F1;
+  display: inline-block;
+  width: 100%; }
+  .mainBody .leftSideBody {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 33px; }
+    .mainBody .leftSideBody .showResults {
+      margin-left: 135px;
+      font-size: 13px; }
+    .mainBody .leftSideBody .categories {
+      width: 240px;
+      border: 1px solid #E1E3DF;
+      border-radius: 2px;
+      background-color: white;
+      margin-left: 135px;
+      margin-top: 10px; }
+      .mainBody .leftSideBody .categories p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #555555;
+        margin-left: 10px; }
+      .mainBody .leftSideBody .categories ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 25px;
+        padding-bottom: 8px; }
+        .mainBody .leftSideBody .categories ul li {
+          display: block;
+          font-size: 13px;
+          margin-bottom: 10px; }
+    .mainBody .leftSideBody .refine {
+      margin-left: 135px;
+      margin-top: 20px;
+      font-size: 13px; }
+    .mainBody .leftSideBody .refineOptions {
+      width: 240px;
+      border: 1px solid #E1E3DF;
+      border-radius: 2px;
+      background-color: white;
+      margin-left: 135px;
+      margin-top: 10px; }
+      .mainBody .leftSideBody .refineOptions p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #555555;
+        margin: 10px 0 0 10px; }
+      .mainBody .leftSideBody .refineOptions ul {
+        list-style: none;
+        padding-left: 25px;
+        padding-bottom: 8px;
+        padding-top: 10px;
+        margin: 0; }
+        .mainBody .leftSideBody .refineOptions ul li {
+          padding-bottom: 4px; }
+          .mainBody .leftSideBody .refineOptions ul li a {
+            font-size: 13px;
+            margin-left: 5px; }
+      .mainBody .leftSideBody .refineOptions .line {
+        width: 215px;
+        height: 1px;
+        background-color: #E1E3DF;
+        margin-left: auto;
+        margin-right: auto; }
+      .mainBody .leftSideBody .refineOptions .priceInputs {
+        margin-left: 10px;
+        margin-bottom: 12px; }
+        .mainBody .leftSideBody .refineOptions .priceInputs .lowPrice {
+          width: 60px;
+          height: 30px;
+          border: 1px solid #E1E3DF;
+          border-radius: 3px; }
+        .mainBody .leftSideBody .refineOptions .priceInputs .highPrice {
+          width: 60px;
+          height: 30px;
+          border: 1px solid #E1E3DF;
+          border-radius: 3px; }
+        .mainBody .leftSideBody .refineOptions .priceInputs .arrowBox {
+          width: 30px;
+          height: 30px;
+          border: 1px solid #E1E3DF;
+          border-radius: 3px;
+          display: inline-block;
+          margin-left: 10px; }
+  .mainBody .rightSideBody {
+    display: inline-block;
+    margin-top: 30px; }
+    .mainBody .rightSideBody .categoriesInResults {
+      display: inline-block;
+      font-size: 13px;
+      margin-left: 15px; }
+    .mainBody .rightSideBody .sortBy {
+      display: inline-block;
+      font-size: 13px;
+      margin-left: 340px; }
+    .mainBody .rightSideBody .resultsContainer {
+      background-color: #F5F5F1;
+      width: 750px; }
+      .mainBody .rightSideBody .resultsContainer .resultsCard {
+        float: right;
+        width: 226.984px;
+        height: 227.656px;
+        overflow: hidden;
+        border: 1px solid #E1E3DF;
+        border-radius: 3px;
+        box-shadow: 0 0.1px #CBCCC9;
+        margin: 10px; }
+      .mainBody .rightSideBody .resultsContainer .productImages {
+        width: 100%;
+        height: 178.656px;
+        overflow: hidden; }
+        .mainBody .rightSideBody .resultsContainer .productImages img {
+          max-width: 100%; }
+      .mainBody .rightSideBody .resultsContainer .cardText {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 12px;
+        background-color: white; }
+        .mainBody .rightSideBody .resultsContainer .cardText ul {
+          list-style: none;
+          padding: 7px;
+          margin: 0; }
