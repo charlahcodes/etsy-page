@@ -11,8 +11,8 @@ var imageFunction = _.template(imageString);
 _.each(etsy.results, function (item) {
   var itemHTML = templateFunction(item);
     var imageHTML = imageFunction(item);
-  $('.productImages').append(imageHTML);
-  $('.searchResults').append(itemHTML);
+  $('.resultsContainer').append(imageHTML);
+  $('.resultsContainer').append(itemHTML);
 
 });
 

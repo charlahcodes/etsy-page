@@ -32,7 +32,13 @@
 
 .productImages {
   width: 224.984px;
+  height: 178.656px;
   overflow: hidden; }
 
 .productImages img {
   max-width: 100%; }
+
+  .searchResults {
+    width: 212.984px;
+    height: 35px;
+  }
