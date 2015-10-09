@@ -46,7 +46,7 @@ a:hover {
   }
 
   .searchButton:hover {
-    background-color: #32b3d3;
+    background: url('../images/cart.png');
     cursor: pointer;
   }
 }
@@ -81,6 +81,7 @@ a:hover {
 
   .cart {
     color: #888888;
+    background: url('../images/cart.png')
   }
 }
 
@@ -225,44 +226,65 @@ a:hover {
       }
 
       .colors {
+          margin-left: 12px;
 
         div {
-
+          border-radius: 3px;
+          border: 1px solid #E1E3DF;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
         }
 
         .red {
-
+          background-color: #F40932;
         }
 
         .orange {
-        
+          background-color: #FF7F00;
         }
          
         .yellow {
-
+          background-color: #F3CC09;
         }
           
         .green {
-
+          background-color: #08C209;
         }
 
         .blue {
-
+          background-color: #0ACCF3;
         }
 
         .purple {
-
+          background-color: #A60AF3;
         }
        
         .black {
-
+          background-color: black;
         }
 
         .white {
-
+          background-color: white;
         }
 
       }
+
+      .select {
+        width: 220px;
+        margin-left: 9px;
+        margin-bottom: 16px;
+        height: 35px;
+        border: 1px solid #34A8C4;
+        border-radius: 3px;
+
+        p {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+
+      
     }
   }
 
@@ -299,12 +321,62 @@ a:hover {
       }
 
       .productImages {
-        width: 100%;
+        width: 226.984px;
         height: 178.656px;
         overflow: hidden; 
+        position: relative;
+
       
-        img {
-          max-width: 100%; }
+        .mainProductImage {
+          max-width: 100%; 
+          z-index: 0;
+          }
+
+        .icons {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          position: absolute;
+          opacity: 0;
+
+          .heartIcon {
+            z-index: 1;
+            position: absolute;
+            width: 25px;
+            background-color: white;
+            margin-left: 170px;
+            margin-top: 3px;
+            border: 1px solid #E1E3DF;
+            border-radius: 3px;
+
+            img {
+              width: 60%;
+              padding-left: 4.5px;
+              padding-top: 5px;
+            }  
+          }
+
+          .hamburger {
+            z-index: 1;
+            position: absolute;
+            width: 25px;
+            background-color: white;
+            margin-left: 198px;
+            margin-top: 3px;
+            border: 1px solid #E1E3DF;
+            border-radius: 3px;
+
+            img {
+              width: 60%;
+              padding-left: 4.5px;
+              padding-top: 5px;
+            }
+          }  
+        }
+        .icons:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
       }
 
       .cardText {
@@ -318,8 +390,141 @@ a:hover {
           list-style: none;
           padding: 7px;
           margin: 0;
+
+          .cardTitle {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+            width: 215px;  
+            float: left;
+          }
+
+          .shopName {
+            float: left;
+            margin-top: 6px;
+            color: #B6B6B6;
+          }
+
+          .cardPrice {
+            float: right;
+            margin-top: 6px;
+            color: #7BC146;
+          }
         }
       }
+    }
+  }
+}
+
+.footer {
+  background-color: #F5F5F1; 
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+
+  p {
+    margin-left: 395px;
+
+    b {
+      color: #555555;
+    }
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  .relatedItems {
+
+    table {
+      margin-left: 395px;
+
+      tr {
+        width: 100%;
+      
+        td {
+          width: 180px;
+          padding: 2px;
+        }
+      }
+    }
+  }
+
+  .pageButtons {
+    margin-bottom: 20px;
+    margin-left: 401px;
+    
+
+    div {
+      height: 38px; 
+      border: 1px solid #D9D9D9;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      
+    }
+
+    p {
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .leftArrowButton {
+      width: 38px;
+      margin-left: -4px;
+      color: #AAAAAA;
+      font-size: 16px;
+      font-weight: bold;
+      border: 1px 0 1px 1px solid #D9D9D9;
+      border-radius: 3px;
+    }
+
+    .currentNumberButton {
+      width: 33.7969px;
+      margin-left: -5px;
+      border: 1px solid black;
+      background-color: #F1F1EB;
+
+    }
+
+    .numberButton {
+      width: 33.7969px;
+      margin-left: -3.5px;
+      border-left: 0;
+      color: #676767;
+      background-color: white;
+
+    }
+
+    .elButton {
+      width: 40px;
+      margin-left: -4px;
+    }
+
+    .totalNumberButton {
+      width: 49.3594px;
+      margin-left: -5px;
+      color: #676767;
+      font-weight: bold;
+      background-color: white;
+      z-index: 1;
+    }
+
+    .rightArrowButton {
+      width: 38px;
+      margin-left: -4.5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #676767;
+      border: 1px 1px 1px 0 solid #D9D9D9;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      background-color: white;
+      z-index: 0;
     }
   }
 }
