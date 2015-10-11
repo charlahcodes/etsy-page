@@ -137,6 +137,7 @@ a:hover {
 
 .topMenu ul li:hover {
   color: #222222;
+  cursor: pointer;
 }
 
 // Main body
@@ -208,7 +209,6 @@ a:hover {
         font-weight: bold;
         color: #555555;
         margin: 10px 0 3px 10px;
-
       }
 
       ul {
@@ -240,7 +240,6 @@ a:hover {
         margin-left: 10px;
         margin-bottom: 12px;
 
-
         .lowPrice {
           width: 60px;
           height: 30px;
@@ -262,6 +261,19 @@ a:hover {
           border-radius: 3px;
           float: right;
           margin-right: 42px; 
+
+          div {
+            float: right;
+            margin-right: 10px;
+            margin-top: 6px;
+            vertical-align: center;
+            color: #555555;
+          }
+
+          div:hover {
+            cursor: pointer;
+            color: black;
+          }
         }
       }
 
@@ -307,7 +319,10 @@ a:hover {
         .white {
           background-color: white;
         }
+      }
 
+      .colors:hover {
+        cursor: pointer;
       }
 
       .select {
@@ -323,8 +338,6 @@ a:hover {
           font-weight: normal;
         }
       }
-
-      
     }
   }
 
@@ -367,7 +380,6 @@ a:hover {
         height: 178.656px;
         overflow: hidden; 
         position: relative;
-
       
         .mainProductImage {
           max-width: 100%; 
@@ -467,6 +479,7 @@ a:hover {
   }
 }
 
+// footer
 .footer {
   background-color: #F5F5F1; 
   display: inline-block;
@@ -504,7 +517,6 @@ a:hover {
   .pageButtons {
     margin-bottom: 20px;
     margin-left: 401px;
-    
 
     div {
       height: 38px; 
@@ -512,7 +524,6 @@ a:hover {
       display: inline-block;
       text-align: center;
       position: relative;
-      
     }
 
     p {
@@ -539,7 +550,6 @@ a:hover {
       margin-left: -5px;
       border: 1px solid black;
       background-color: #F1F1EB;
-
     }
 
     .numberButton {

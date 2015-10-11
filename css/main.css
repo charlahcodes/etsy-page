@@ -97,7 +97,8 @@ a:hover {
     padding: 0 10px; }
 
 .topMenu ul li:hover {
-  color: #222222; }
+  color: #222222;
+  cursor: pointer; }
 
 .mainBody {
   background-color: #F5F5F1;
@@ -188,6 +189,15 @@ a:hover {
           border-radius: 3px;
           float: right;
           margin-right: 42px; }
+          .mainBody .leftSideBody .refineOptions .priceInputs .arrowBox div {
+            float: right;
+            margin-right: 10px;
+            margin-top: 6px;
+            vertical-align: center;
+            color: #555555; }
+          .mainBody .leftSideBody .refineOptions .priceInputs .arrowBox div:hover {
+            cursor: pointer;
+            color: black; }
       .mainBody .leftSideBody .refineOptions .colors {
         margin-left: 12px; }
         .mainBody .leftSideBody .refineOptions .colors div {
@@ -212,6 +222,8 @@ a:hover {
           background-color: black; }
         .mainBody .leftSideBody .refineOptions .colors .white {
           background-color: white; }
+      .mainBody .leftSideBody .refineOptions .colors:hover {
+        cursor: pointer; }
       .mainBody .leftSideBody .refineOptions .select {
         width: 220px;
         margin-left: 9px;
