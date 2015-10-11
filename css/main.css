@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif; }
+
 a {
   color: #13A0C0;
   text-decoration: none; }
@@ -7,14 +10,15 @@ a:hover {
 
 .topLeftText {
   list-style: none;
-  margin: 20px 150px;
+  margin: 15px 0 20px 150px;
   padding: 0;
   float: left; }
   .topLeftText li {
     display: inline-block; }
   .topLeftText .logo {
     color: #F56400;
-    font: 40px serif; }
+    font: 40px serif;
+    vertical-align: bottom; }
   .topLeftText .search {
     border: 1px solid #C9CACA;
     border-radius: 3px;
@@ -38,7 +42,7 @@ a:hover {
 .topRightText {
   float: right;
   margin-right: 55px;
-  margin-top: -8px; }
+  margin-top: -5px; }
   .topRightText .topLinks {
     list-style: none;
     margin: 30px 150px;
@@ -57,7 +61,7 @@ a:hover {
       background-color: #f3fbfd; }
   .topRightText .cartContainer {
     list-style: none;
-    margin: -85px 100px;
+    margin: -87px 100px;
     padding: 0; }
     .topRightText .cartContainer .cart {
       color: #888888;
@@ -86,10 +90,14 @@ a:hover {
   font-size: 14px;
   text-align: center; }
   .topMenu ul {
-    list-style: none; }
+    list-style: none;
+    margin-left: -150px; }
   .topMenu li {
     display: inline-block;
     padding: 0 10px; }
+
+.topMenu ul li:hover {
+  color: #222222; }
 
 .mainBody {
   background-color: #F5F5F1;
@@ -101,7 +109,9 @@ a:hover {
     margin-top: 33px; }
     .mainBody .leftSideBody .showResults {
       margin-left: 135px;
-      font-size: 13px; }
+      font-size: 13px;
+      font-weight: bold;
+      color: #565656; }
     .mainBody .leftSideBody .categories {
       width: 240px;
       border: 1px solid #E1E3DF;
@@ -126,7 +136,9 @@ a:hover {
     .mainBody .leftSideBody .refine {
       margin-left: 135px;
       margin-top: 20px;
-      font-size: 13px; }
+      font-size: 13px;
+      font-weight: bold;
+      color: #565656; }
     .mainBody .leftSideBody .refineOptions {
       width: 240px;
       border: 1px solid #E1E3DF;
@@ -138,7 +150,7 @@ a:hover {
         font-size: 14px;
         font-weight: bold;
         color: #555555;
-        margin: 10px 0 0 10px; }
+        margin: 10px 0 3px 10px; }
       .mainBody .leftSideBody .refineOptions ul {
         list-style: none;
         padding-left: 25px;
@@ -216,11 +228,13 @@ a:hover {
     .mainBody .rightSideBody .categoriesInResults {
       display: inline-block;
       font-size: 13px;
-      margin-left: 15px; }
+      margin-left: 15px;
+      color: #565656; }
     .mainBody .rightSideBody .sortBy {
       display: inline-block;
       font-size: 13px;
-      margin-left: 340px; }
+      margin-left: 340px;
+      color: #565656; }
     .mainBody .rightSideBody .resultsContainer {
       background-color: #F5F5F1;
       width: 750px; }
@@ -359,6 +373,9 @@ a:hover {
       border-left: 0;
       color: #676767;
       background-color: white; }
+    .footer .pageButtons .numberButton:hover {
+      background-color: #F9F9F7;
+      cursor: pointer; }
     .footer .pageButtons .elButton {
       width: 40px;
       margin-left: -4px; }
@@ -369,6 +386,9 @@ a:hover {
       font-weight: bold;
       background-color: white;
       z-index: 1; }
+    .footer .pageButtons .totalNumberButton:hover {
+      background-color: #F9F9F7;
+      cursor: pointer; }
     .footer .pageButtons .rightArrowButton {
       width: 38px;
       margin-left: -4.5px;
@@ -380,3 +400,6 @@ a:hover {
       border-top-right-radius: 3px;
       background-color: white;
       z-index: 0; }
+    .footer .pageButtons .rightArrowButton:hover {
+      background-color: #F9F9F7;
+      cursor: pointer; }
