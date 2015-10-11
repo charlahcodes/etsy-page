@@ -16,12 +16,16 @@
         </div>
       </li>
     </ul>
-    <ul class="topRightText">
-      <li><div><a href="#">Sell on Etsy</a></div></li>
-      <li><div><a href="#">Register</a></div></li>
-      <li><div class="signIn">Sign in</div></li>
-      <li><div class="cart"><!-- <img src="images/cart.png"> -->Cart</div></li>
-    </ul>
+    <div class="topRightText">
+      <ul class="topLinks">
+        <li><div><a href="#">Sell on Etsy</a></div></li>
+        <li><div><a href="#">Register</a></div></li>
+        <li><div class="signIn">Sign in</div></li>
+      </ul>
+      <ul class="cartContainer">
+        <li><div class="cart"><div class="cartText">Cart</div></div></li>
+      </ul>
+    </div>
   </div>
   <div class="topMenu">
     <ul>
@@ -150,19 +154,20 @@
  
   <script type="text/template" id="itemTemplate">
     <div class="resultsCard">
-      <div class="productImages">
+      <a href = "<%= url %>"><div class="productImages">
         
-        <div class ="icons">
+        <div class ="icons"> 
           <div class="heartIcon"><img src="images/heart.png"></div>
           <div class="hamburger"><img src="images/hamburger.png"></div>
         </div>
-        <img class="mainProductImage" src="<%= Images[0].url_570xN %>">
-        
-      </div>
+
+       <img class="mainProductImage" src="<%= Images[0].url_570xN %>">
+      </div></a>
+
       <div class = "cardText">
         <ul>
-          <li><div class="cardTitle"><%= title %></div></li>
-          <li><div class="shopName"><%= Shop.shop_name %></div></li>
+          <li><a href = "<%= url %>"><div class="cardTitle"><%= title %></div></a></li>
+          <li><a href="#"><div class="shopName"><%= Shop.shop_name %></div></a></li>
           <li><div class="cardPrice">$<%= price %></div></li>
         </ul>
       </div>
